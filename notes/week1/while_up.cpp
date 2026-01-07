@@ -6,8 +6,8 @@ using namespace std;
 
 int main()
 {
-    int n = 1;
-    while (n <= 10)
+    int n = 0;
+    while (n < 10)
     {
         cout << n << "\n";
         n++; // increment n by 1

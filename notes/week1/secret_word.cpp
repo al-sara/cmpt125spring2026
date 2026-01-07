@@ -10,8 +10,10 @@ int main() {
     string guess;
     cout << "Enter a guess: ";
     cin >> guess;
-    if (guess == secret_word) {
+    if (guess == secret_word) 
+    {
         cout << "You guessed the secret word!\n";
     }
+
     cout << "\ndone\n";
 }

@@ -9,7 +9,7 @@ int main()
     char sep;
     cout << "Enter a character: ";
     cin >> sep;
-    switch (sep)
+    switch(sep)
     {
     case ',':
         cout << "definitely a separator";

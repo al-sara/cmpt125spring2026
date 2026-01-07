@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
     cout << "What's your name? ";
-    string name;
+    string name; // defines the variable name
     cin >> name;
-    cout << "Hello, " << name << "!\n";
+    cout << "Hello, " << name << "\n";
 }

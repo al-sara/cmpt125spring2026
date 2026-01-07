@@ -2,9 +2,10 @@
 
 #include <iostream>
 
-using namespace std;
+// using namespace std;
 
 int main()
 {
-    cout << "Hello, world!\n";
+    std::cout << "Hello, world!\n";
+    std::cout << "How's it going?\n";
 }
