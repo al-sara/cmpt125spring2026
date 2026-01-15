@@ -171,6 +171,19 @@ This is a postfix calculator: operators appear after their operands.
 e.g. 2 3 * + 1 evaluates to 7, the same as 1 + 2 * 3.
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Submit Your Work
 
 Please put all your code into [a1.cpp](a1.cpp), and submit it on Canvas.
@@ -180,20 +193,6 @@ standard [makefile](makefile) to compile it.
 
 
 ## Basic Requirements
-
-- **Your program must compile using the [assignment makefile](makefile)**. A
-  standard Linux/Unix compiler will be used, e.g. g++ or c++. If your program
-  doesn't compile, then the marker might spend a minute or two checking it to
-  see if the problem is a simple mistake or typo. But if they can't quickly fix
-  it, then they will give it 0. Ensuring your program compiles is your
-  responsibility.
-
-  If you choose to develop your program without using the [assignment
-  makefile](makefile), you are still responsible for ensuring it compiles and
-  runs properly with it.
-
-- **The student info and statement of originality is filled out in each file**.
-  The program might not be marked if this missing or incomplete.
 
 ## Checking for Memory Errors
 
@@ -220,21 +219,6 @@ A program is considered to have no memory error if:
 
 - It is usually okay if **still reachable** reports a non- zero number of bytes.
 
-### Leaks (macOS)
-
-`leaks` is a tool that comes with macOS and that can help you find memory leaks
-and other memory errors. You can run it like this:
-
-```bash
-$ leaks -atExit -- ./a1
-  
-// ... lots of output ...
-
-leaks Report Version: 4.0, multi-line stacks
-Process 52960: 187 nodes malloced for 15 KB
-Process 52960: 0 leaks for 0 total leaked bytes.
-```
-
 ### Compiler Sanitizers
 
 The compiler has some built-in tools to help find memory errors. You can use
@@ -249,13 +233,6 @@ On some systems `-fsanitize=leak` is not supported, so in that case use just
 
 Also, tools like `leaks` might not work if you compile with
 `-fsanitize=address`. So remove that option when you use `leaks`.
-
-## Hints
-
-- You can use `getline` to read in a line of input from the console.
-- Use `try` and `catch` to handle errors.
-- Test as you go. Whenever you add a new feature, test it to make sure it works
-  before moving on to the next feature.
 
 ## Marking Scheme
 
