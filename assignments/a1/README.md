@@ -1,12 +1,5 @@
 # Assignment 1: A Postfix Calculator
 
-Your task is to to implement a calculator that evaluates **postfix
-expressions**. In postfix expressions operators appear *after* their operands.
-For example, `2 3 *` is a postfix expression that evaluates to `6`, and `4 1 - 2
-+` evaluates to `5`. Compared to the usual infix expressions (e.g. `(2 + 3) *
-4`), postfix expressions don't require parentheses or precedence rules (like "do
-multiplication before addition"), and can be easily evaluated using a **stack**.
-
 For the calculator, a user will type in tokens. A **token** is either a number
 (like `2` or `-3.14`) or an operator (like `+`, `dup`, or `help` --- the full
 list is below). Tokens need to be separated by spaces, e.g. `2 3 *` is a valid
